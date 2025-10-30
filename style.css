@@ -1,0 +1,75 @@
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  margin: 0;
+  line-height: 1.7;
+  color: #333;
+}
+
+header {
+  background: #002c4d;
+  color: white;
+  padding: 10px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url('https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=1600&q=80');
+  color: white;
+  text-align: center;
+  padding: 100px 10px;
+  background-size: cover;
+}
+
+.cta {
+  background: #f7b733;
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+section {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+h2 {
+  color: #002c4d;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+footer {
+  background: #002c4d;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
