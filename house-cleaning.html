@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>家庭用エアコンクリーニング予約 | SunsCreate Air Solution</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+    <div class="container">
+        <h1 class="logo">SunsCreate Air Solution</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">業務用空調</a></li>
+                <li><a href="house-cleaning.html" class="active">家庭用エアコン洗浄</a></li>
+                <li><a href="mailto:sunscreate@scky.fun">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero-house">
+    <div class="container">
+        <h2>家庭用エアコンクリーニング予約フォーム</h2>
+        <p>一般家庭向けエアコン分解洗浄サービスです。必要項目をご入力のうえ送信してください。</p>
+    </div>
+</section>
+
+<section class="pricing">
+    <div class="container">
+        <h3>料金表（税込）</h3>
+        <ul>
+            <li>壁掛けエアコン：<strong>14,000円 / 1台</strong></li>
+            <li>天井埋込型（天吊含む）：<strong>27,000円 / 1台</strong></li>
+            <li>お掃除機能付き：<strong>+6,000円 / 1台</strong></li>
+            <li>室外機洗浄：<strong>5,000円 / 1台</strong></li>
+        </ul>
+        <p>※複数台の場合は台数分を選択してください。</p>
+    </div>
+</section>
+
+<section class="form-section">
+    <div class="container">
+        <form id="cleaningForm">
+
+            <input type="hidden" name="_subject" value="【家庭用】エアコンクリーニング予約">
+            <input type="hidden" name="service_type" value="家庭用エアコン洗浄">
+
+            <label>お名前</label>
+            <input type="text" name="name" required>
+
+            <label>ご住所</label>
+            <input type="text" name="address" required>
+
+            <label>電話番号</label>
+            <input type="text" name="phone" required>
+
+            <label>メールアドレス</label>
+            <input type="email" name="email" required>
+
+            <label>壁掛けエアコン 台数</label>
+            <select name="wall" required>
+                <option value="0">0</option><option value="1">1</option><option value="2">2</option>
+                <option value="3">3</option><option value="4">4</option><option value="5">5</option>
+            </select>
+
+            <label>埋め込み型 / 天吊エアコン 台数</label>
+            <select name="ceiling" required>
+                <option value="0">0</option><option value="1">1</option><option value="2">2</option>
+                <option value="3">3">3</option><option value="4">4</option><option value="5">5</option>
+            </select>
+
+            <label>お掃除機能付きの台数</label>
+            <select name="auto_clean" required>
+                <option value="0">0</option><option value="1">1</option><option value="2">2</option>
+                <option value="3">3</option><option value="4">4</option><option value="5">5</option>
+            </select>
+
+            <label>室外機 洗浄台数</label>
+            <select name="outdoor" required>
+                <option value="0">0</option><option value="1">1</option><option value="2">2</option>
+                <option value="3">3</option><option value="4">4</option><option value="5">5</option>
+            </select>
+
+            <label>支払い方法</label>
+            <select name="payment" required>
+                <option value="現金">現金</option>
+                <option value="クレジットカード">クレジットカード</option>
+                <option value="QR決済">QR決済</option>
+                <option value="後日振込">後日振込</option>
+            </select>
+
+            <label>駐車場の有無</label>
+            <select name="parking" required>
+                <option value="あり">あり</option>
+                <option value="なし">なし</option>
+            </select>
+
+            <label>エアコンまでの高さ</label>
+            <select name="height" required>
+                <option value="2.5m以下">2.5m以下</option>
+                <option value="2.5〜3m程度">2.5〜3m程度</option>
+                <option value="3m以上">3m以上</option>
+            </select>
+
+            <label>備考欄</label>
+            <textarea name="message" rows="4" placeholder="ご希望日程などがあればご記入ください"></textarea>
+
+            <button type="submit">予約を送信する</button>
+        </form>
+    </div>
+</section>
+
+<section class="area">
+    <div class="container">
+        <h3>対応エリア（家庭用）</h3>
+        <p><strong>東京都</strong><br>
+        足立区 / 荒川区 / 板橋区 / 稲城市 / 江戸川区 / 大田区 / 葛飾区 / 北区 / 江東区 / 小金井市 / 小平市 / 狛江市 / 品川区 / 渋谷区 / 新宿区 / 杉並区 / 墨田区 / 世田谷区 / 台東区 / 多摩市 / 中央区 / 調布市 / 千代田区 / 豊島区 / 中野区 / 西東京市 / 練馬区 / 東久留米市 / 日野市 / 府中市 / 文京区 / 町田市 / 三鷹市 / 港区 / 武蔵野市 / 目黒区</p>
+
+        <p><strong>神奈川県</strong><br>
+        厚木市 / 綾瀬市 / 伊勢原市 / 川崎市麻生区 / 川崎市川崎区 / 川崎市幸区 / 川崎市高津区 / 川崎市多摩区 / 川崎市中原区 / 川崎市宮前区 / 相模原市中央区 / 相模原市南区 / 座間市 / 秦野市 / 大和市 / 横浜市青葉区 / 横浜市旭区 / 横浜市泉区 / 横浜市磯子区 / 横浜市神奈川区 / 横浜市金沢区 / 横浜市港南区 / 横浜市港北区 / 横浜市栄区 / 横浜市瀬谷区 / 横浜市都筑区 / 横浜市鶴見区 / 横浜市戸塚区 / 横浜市中区 / 横浜市西区 / 横浜市保土ケ谷区 / 横浜市緑区 / 横浜市南区</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 SunsCreate Air Solution</p>
+</footer>
+
+<script src="auto-mail.js"></script>
+</body>
+</html>

@@ -231,3 +231,253 @@ footer {
     padding: 10px 20px;
   }
 }
+
+/* ===============================
+   家庭用エアコンページ専用スタイル
+   =============================== */
+
+.hero-small {
+  background:
+    linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),
+    url('images/air_conditioning_bg.jpg') center/cover no-repeat;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.price-table {
+  padding: 60px 20px;
+  text-align: center;
+  background: #fff;
+}
+
+.price-table table {
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.price-table th,
+.price-table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+}
+
+.price-table th {
+  background: #EFF7E6;
+  color: #1D5C0D;
+}
+
+.area-section {
+  background: #FAFAF5;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.area-section details {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  cursor: pointer;
+}
+
+.contact {
+  background: #fff;
+  padding: 70px 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  background: #fdfdfd;
+}
+
+.contact-form button {
+  align-self: center;
+  background-color: #8DC63F;
+  color: white;
+  padding: 14px 40px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #7CB518;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .price-table table {
+    font-size: 14px;
+  }
+  .contact-form button {
+    width: 100%;
+  }
+}
+
+/* ================================
+   家庭用エアコンクリーニングページ
+=================================== */
+.hero-house {
+    background: url('bg-house.jpg') center/cover no-repeat;
+    padding: 80px 20px;
+    text-align: center;
+    color: #fff;
+}
+.hero-house h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+.hero-house p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* 料金表 */
+.pricing {
+    background: #f2f9f3;
+    padding: 50px 20px;
+}
+.pricing h3 {
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+}
+.pricing ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+.pricing li {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+
+/* 予約フォーム */
+.form-section {
+    padding: 60px 20px;
+    background: #fff;
+}
+.form-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.form-section label {
+    font-weight: bold;
+    margin: 15px 0 5px;
+}
+.form-section input,
+.form-section select,
+.form-section textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+.form-section button {
+    margin-top: 25px;
+    padding: 14px;
+    background: #3b9d59;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.form-section button:hover {
+    background: #2f844a;
+}
+
+/* 対応エリア */
+.area {
+    background: #f7f7f7;
+    padding: 50px 20px;
+}
+.area h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+.area p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* ======================
+   送信完了ページ thanks.html
+========================= */
+body.thanks {
+    background: #f2f9f3;
+    text-align: center;
+    padding: 80px 20px;
+}
+.thanks-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 50px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+.thanks-wrapper h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #3b9d59;
+}
+.thanks-wrapper p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+.btn-area {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.btn {
+    display: block;
+    padding: 14px;
+    background: #3b9d59;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+}
+.btn:hover {
+    background: #2f844a;
+}
+.btn.alt {
+    background: #555;
+}
+.btn.alt:hover {
+    background: #333;
+}
+
+/* ======================
+   スマホ対応
+========================= */
+@media (max-width: 768px) {
+    .hero-house h2 {
+        font-size: 1.7rem;
+    }
+    .thanks-wrapper {
+        padding: 40px 20px;
+    }
+}
