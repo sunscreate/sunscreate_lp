@@ -69,10 +69,10 @@
             <label>埋め込み型 / 天吊エアコン 台数</label>
             <select name="ceiling" required>
                 <option value="0">0</option><option value="1">1</option><option value="2">2</option>
-                <option value="3">3">3</option><option value="4">4</option><option value="5">5</option>
+                <option value="3">3</option><option value="4">4</option><option value="5">5</option>
             </select>
 
-            <label>お掃除機能付きの台数</label>
+            <label>お掃除機能付き台数</label>
             <select name="auto_clean" required>
                 <option value="0">0</option><option value="1">1</option><option value="2">2</option>
                 <option value="3">3</option><option value="4">4</option><option value="5">5</option>
@@ -83,6 +83,34 @@
                 <option value="0">0</option><option value="1">1</option><option value="2">2</option>
                 <option value="3">3</option><option value="4">4</option><option value="5">5</option>
             </select>
+
+            <label>希望日①</label>
+            <div class="date-flex">
+                <input type="date" name="date1" required>
+                <select name="time1" required>
+                    <option value="午前">午前</option>
+                    <option value="午後">午後</option>
+                </select>
+            </div>
+
+            <label>希望日②</label>
+            <div class="date-flex">
+                <input type="date" name="date2" required>
+                <select name="time2" required>
+                    <option value="午前">午前</option>
+                    <option value="午後">午後</option>
+                </select>
+            </div>
+
+            <label>希望日③（任意）</label>
+            <div class="date-flex">
+                <input type="date" name="date3">
+                <select name="time3">
+                    <option value="">選択なし</option>
+                    <option value="午前">午前</option>
+                    <option value="午後">午後</option>
+                </select>
+            </div>
 
             <label>支払い方法</label>
             <select name="payment" required>
@@ -105,8 +133,8 @@
                 <option value="3m以上">3m以上</option>
             </select>
 
-            <label>備考欄</label>
-            <textarea name="message" rows="4" placeholder="ご希望日程などがあればご記入ください"></textarea>
+            <label>ご希望や伝達事項があればご記入ください</label>
+            <textarea name="message" rows="4"></textarea>
 
             <button type="submit">予約を送信する</button>
         </form>

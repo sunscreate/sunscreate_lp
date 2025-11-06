@@ -15,7 +15,7 @@
             <ul>
                 <li><a href="index.html" class="active">業務用空調</a></li>
                 <li><a href="house-cleaning.html">家庭用エアコン洗浄</a></li>
-                <li><a href="mailto:sunscreate@scky.fun">お問い合わせ</a></li>
+                <li><a href="mailto:sunscreate@scky.fun">メール問い合わせ</a></li>
             </ul>
         </nav>
     </div>
@@ -26,9 +26,8 @@
         <h2>業務用空調のすべてを、最適なプロチームで一括対応。</h2>
         <p>設置・洗浄・フロン点検・修理・ガス補充まで。<br>
         SunsCreateが企業の空調管理をまるごとサポートします。</p>
-        <a href="mailto:sunscreate@scky.fun" class="btn-cta">無料見積を依頼する</a>
 
-        <!-- ✅ 新しく追加：家庭用ページ導線ボタン -->
+        <a href="#business-form" class="btn-cta">無料見積もりを依頼する</a>
         <a href="house-cleaning.html" class="btn-sub">家庭用エアコン洗浄の予約はこちら</a>
     </div>
 </section>
@@ -39,28 +38,20 @@
         <ul class="check-list">
             <li>フロン点検や法令対応が不安</li>
             <li>業者ごとに対応がバラバラで管理が大変</li>
-            <li>急な故障・水漏れ・冷えないトラブルに困っている</li>
-            <li>複数店舗・オフィスの空調管理をまとめたい</li>
+            <li>急な故障や水漏れなどのトラブルが多い</li>
+            <li>複数店舗やオフィスの空調を一括管理したい</li>
         </ul>
-    </div>
-</section>
-
-<section class="solution">
-    <div class="container">
-        <h3>SunsCreateが一括解決</h3>
-        <p>経験豊富な空調技術スタッフと連携し、現場調査から施工・点検・報告までワンストップ対応。</p>
-        <img src="flow.png" alt="対応フロー図（企業→SunsCreate→現場）" class="flow-img">
     </div>
 </section>
 
 <section class="services">
     <div class="container">
-        <h3>サービス内容</h3>
+        <h3>対応サービス</h3>
         <ul>
-            <li>業務用エアコン設置（天井カセット・ビルマルチ・パッケージ型）</li>
+            <li>業務用エアコン設置（天井カセット / ビルマルチ / パッケージ型）</li>
             <li>業務用エアコン分解洗浄・防カビ施工</li>
-            <li>定期点検・フロン点検・報告書作成</li>
-            <li>ガス補充・修理（メーカー対応可能）</li>
+            <li>定期点検 / フロン点検 / 報告書作成</li>
+            <li>ガス補充・冷媒漏れ修理・メーカー対応可能</li>
         </ul>
     </div>
 </section>
@@ -70,9 +61,41 @@
         <h3>事業情報</h3>
         <p><strong>SunsCreate Air Solution</strong><br>
         代表：山田 和矢（Yamada Kazuya）<br>
-        対応エリア：東京・神奈川・埼玉・千葉（業務用）<br>
-        メール：<a href="mailto:sunscreate@scky.fun">sunscreate@scky.fun</a>
-        </p>
+        対応エリア：東京 / 神奈川 / 埼玉 / 千葉（業務用）<br>
+        メール：<a href="mailto:sunscreate@scky.fun">sunscreate@scky.fun</a></p>
+    </div>
+</section>
+
+<!-- ✅ 業務用 無料見積フォーム 復活 -->
+<section id="business-form" class="form-section">
+    <div class="container">
+        <h3>無料見積もり依頼フォーム（業務用）</h3>
+
+        <form id="businessRequest">
+
+            <input type="hidden" name="_subject" value="【業務用】空調見積もり依頼">
+            <input type="hidden" name="service_type" value="業務用空調">
+
+            <label>会社名 / 店舗名</label>
+            <input type="text" name="company" required>
+
+            <label>ご担当者名</label>
+            <input type="text" name="name" required>
+
+            <label>設置 / 管理予定地の住所</label>
+            <input type="text" name="location" required>
+
+            <label>電話番号</label>
+            <input type="text" name="phone" required>
+
+            <label>メールアドレス</label>
+            <input type="email" name="email" required>
+
+            <label>お問い合わせ内容</label>
+            <textarea name="message" rows="4" placeholder="エアコンの台数、メーカー、依頼内容などを記載ください"></textarea>
+
+            <button type="submit">送信する</button>
+        </form>
     </div>
 </section>
 
@@ -80,5 +103,6 @@
     <p>© 2025 SunsCreate Air Solution</p>
 </footer>
 
+<script src="auto-mail.js"></script>
 </body>
 </html>
