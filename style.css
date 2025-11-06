@@ -1,274 +1,503 @@
-/* ============================================
-   RESET & BASE
-============================================ */
+/* ======================================
+   SunsCreate Air Solution - Global Styles
+   ====================================== */
+
+/* Reset & Base ------------------------------------------- */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-    font-family: "Noto Sans JP", sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background: #fff;
-}
-a {
-    text-decoration: none;
-    color: inherit;
-}
-img {
-    width: 100%;
-    display: block;
-}
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: 0 auto;
+  font-family: "ヒラギノ角ゴ ProN", "Noto Sans JP", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f9faf9;
 }
 
-/* ============================================
-   HEADER / NAV
-============================================ */
-header {
-    background: #fff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    position: sticky;
-    top: 0;
-    z-index: 20;
-}
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 0;
-}
-.logo {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #3b9d59;
-}
-nav ul {
-    display: flex;
-    gap: 24px;
-    list-style: none;
-}
-nav a {
-    color: #333;
-    font-size: 0.95rem;
-    font-weight: 500;
-    padding-bottom: 3px;
-}
-nav a.active,
-nav a:hover {
-    border-bottom: 2px solid #3b9d59;
+/* Typography --------------------------------------------- */
+h1, h2, h3 {
+  font-weight: 700;
+  color: #164b1f; /* 落ち着いた深緑 */
+  text-align: center;
 }
 
-/* ============================================
-   HERO (業務用トップ)
-============================================ */
-.hero {
-    background: url('bg-office.jpg') center/cover no-repeat;
-    padding: 120px 20px;
-    text-align: center;
-    color: #fff;
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
 }
-.hero h2 {
-    font-size: 2.4rem;
-    margin-bottom: 15px;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
-}
-.hero p {
-    font-size: 1.15rem;
-    margin-bottom: 35px;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
-}
-.btn-cta {
-    display: inline-block;
-    background: #3b9d59;
-    color: #fff;
-    padding: 14px 36px;
-    border-radius: 6px;
-    font-size: 1.1rem;
-    margin-bottom: 12px;
-}
-.btn-sub {
-    display: inline-block;
-    background: #fff;
-    color: #3b9d59;
-    padding: 12px 30px;
-    border-radius: 6px;
-    font-size: 0.95rem;
-    border: 2px solid #3b9d59;
-}
-.btn-cta:hover { background: #2f844a; }
-.btn-sub:hover { background: #e9f6ec; }
 
-/* ============================================
-   通常セクション共通
-============================================ */
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Layout Containers -------------------------------------- */
 section {
-    padding: 70px 0;
-}
-section h3 {
-    font-size: 1.8rem;
-    margin-bottom: 25px;
-    text-align: center;
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
 }
 
-/* ============================================
-   業務用ページ用
-============================================ */
-.features ul,
-.services ul {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-}
-.features ul li,
-.services ul li {
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-}
-.features {
-    background: #f7f7f7;
-}
-.solution img {
-    max-width: 600px;
-    margin: 25px auto 0;
-    display: block;
+.section-light {
+  background: #f5fdf5;
 }
 
-/* ============================================
-   家庭用ページ HERO
-============================================ */
-.hero-house {
-    background: url('bg-house.jpg') center/cover no-repeat;
-    padding: 100px 20px;
-    text-align: center;
-    color: #fff;
-}
-.hero-house h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-.hero-house p {
-    font-size: 1.1rem;
+.section-white {
+  background: #ffffff;
 }
 
-/* ============================================
-   料金表（家庭用）
-============================================ */
-.pricing {
-    background: #f1f8f2;
-}
-.pricing ul {
-    list-style: none;
-}
-.pricing li {
-    font-size: 1.1rem;
-    margin-bottom: 6px;
+/* Header / Navigation ------------------------------------ */
+header {
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 16px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
-/* ============================================
-   フォーム（共通スタイル）
-============================================ */
-form {
-    max-width: 650px;
-    margin: 0 auto;
-    display: flex;
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.site-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #176b22;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 0.95rem;
+  color: #176b22;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+nav a:hover {
+  opacity: 0.6;
+}
+
+/* Mobile Nav */
+@media (max-width: 768px) {
+  nav ul {
     flex-direction: column;
+    gap: 14px;
+  }
 }
+
+/* ======================================
+   Hero Section（トップ画像＋キャッチコピー）
+   ====================================== */
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 48vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hero h1,
+.hero p {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.6rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+/* 家庭用ページ専用ヒーロー */
+.hero-house {
+  height: 42vh;
+  background-position: center;
+  background-size: cover;
+}
+
+/* ======================================
+   Buttons
+   ====================================== */
+
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #1f7b2e;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: 0.25s ease;
+  text-align: center;
+}
+
+.btn:hover {
+  background: #155d22;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #1f7b2e;
+  color: #1f7b2e;
+}
+
+.btn-outline:hover {
+  background: #1f7b2e;
+  color: #fff;
+}
+
+/* ======================================
+   フォーム（共通）
+   ====================================== */
+
+form {
+  max-width: 750px;
+  margin: auto;
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 10px;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
 form label {
-    font-weight: 700;
-    margin: 18px 0 6px;
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #174e24;
 }
+
 form input,
 form select,
 form textarea {
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 1rem;
-}
-form button {
-    margin-top: 28px;
-    padding: 15px;
-    background: #3b9d59;
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    font-size: 1.1rem;
-    cursor: pointer;
-}
-form button:hover {
-    background: #2f844a;
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #c9c9c9;
+  border-radius: 6px;
+  margin-bottom: 18px;
+  resize: vertical;
 }
 
-/* ============================================
-   希望日フォーム追加用
-============================================ */
-.date-flex {
-    display: flex;
-    gap: 10px;
-}
-.date-flex select {
-    flex: 0 0 30%;
+form textarea {
+  min-height: 120px;
 }
 
-/* ============================================
-   送信完了ページ（thanks.html）
-============================================ */
-body.thanks {
-    background: #eef7f0;
+form .field-row {
+  display: flex;
+  gap: 16px;
 }
-.thanks-wrapper {
-    max-width: 600px;
-    background: #fff;
-    padding: 60px 40px;
-    margin: 80px auto;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.08);
-    text-align: center;
+
+.field-2 {
+  width: 50%;
 }
-.thanks-wrapper h1 {
-    color: #3b9d59;
-    font-size: 2rem;
-    margin-bottom: 12px;
+
+.field-3 {
+  width: 33.3%;
 }
-.btn-area {
-    display: flex;
+
+@media (max-width: 600px) {
+  form .field-row {
     flex-direction: column;
-    gap: 12px;
-    margin-top: 25px;
+    gap: 0;
+  }
+  .field-2, .field-3 {
+    width: 100%;
+  }
 }
-.btn {
-    display: block;
-    padding: 12px;
-    border-radius: 6px;
-    text-align: center;
-    color: #fff;
-    background: #3b9d59;
-}
-.btn.alt { background: #555; }
-.btn:hover { opacity: .85; }
 
-/* ============================================
-   FOOTER
-============================================ */
+/* エラーメッセージ（希望日バリデーション） */
+.error-msg {
+  color: #cc0000;
+  font-size: 0.85rem;
+  margin-top: -12px;
+  margin-bottom: 14px;
+  display: none;
+}
+
+/* ======================================
+   Price Table（家庭用）
+   ====================================== */
+
+.price-box {
+  background: #e9f7ea;
+  border: 2px solid #1f7b2e;
+  padding: 24px;
+  border-radius: 10px;
+  max-width: 650px;
+  margin: 0 auto 40px auto;
+}
+
+.price-box ul {
+  list-style: none;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.price-box li span {
+  font-weight: 700;
+  color: #14461d;
+}
+
+/* ======================================
+   業務用サービス一覧（カード表示）
+   ====================================== */
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  margin-top: 32px;
+}
+
+.service-card {
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #e6e6e6;
+  padding: 26px 20px;
+  text-align: center;
+  transition: 0.25s;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.12);
+}
+
+.service-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ======================================
+   エリア一覧
+   ====================================== */
+
+.area-box {
+  background: #fff;
+  border-left: 6px solid #1f7b2e;
+  padding: 20px 24px;
+  margin: 32px auto;
+  max-width: 800px;
+  line-height: 1.9;
+  font-size: 0.95rem;
+}
+
+.area-box h3 {
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+/* ======================================
+   フッター
+   ====================================== */
+
 footer {
-    background: #3b9d59;
-    color: #fff;
-    text-align: center;
-    padding: 18px 0;
-    font-size: 0.9rem;
+  background: #15471d;
+  color: #fff;
+  padding: 26px 20px;
+  text-align: center;
+  margin-top: 60px;
 }
 
-/* ============================================
-   RESPONSIVE
-============================================ */
+footer p {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* ======================================
+   Thanks Page
+   ====================================== */
+
+.thanks-box {
+  max-width: 650px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  padding: 36px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 60px auto;
+}
+
+.thanks-box h2 {
+  margin-bottom: 16px;
+}
+
+.thanks-box p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 26px;
+}
+
+.thanks-box a {
+  display: inline-block;
+  background: #1f7b2e;
+  color: #fff;
+  padding: 12px 26px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.thanks-box a:hover {
+  background: #155d22;
+}
+
+/* ======================================
+   Responsive Adjustments（スマホ最適化）
+   ====================================== */
+
 @media (max-width: 768px) {
-    .hero h2 { font-size: 1.8rem; }
-    .hero-house h2 { font-size: 1.6rem; }
-    nav ul { gap: 14px; font-size: 0.85rem; }
-    .thanks-wrapper { margin: 40px 16px; padding: 40px 20px; }
+  h1 {
+    font-size: 1.9rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .hero {
+    height: 38vh;
+  }
+  .hero h1 {
+    font-size: 1.9rem;
+  }
+  .hero p {
+    font-size: 0.95rem;
+    max-width: 90%;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 14px;
+  }
+}
+
+/* 強制改行防止（長い行政区名対応） */
+.nowrap {
+  white-space: nowrap;
+}
+
+/* ======================================
+   希望日バリデーション表示
+   ====================================== */
+
+.date-error {
+  display: none;
+  color: #c40000;
+  font-size: 0.85rem;
+  margin-top: -10px;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+.invalid-date {
+  border: 2px solid #c40000 !important;
+}
+
+/* ======================================
+   予約フォーム（家庭用ページ）特別調整
+   ====================================== */
+
+.reservation-notice {
+  background: #fff4d6;
+  border-left: 6px solid #e6a300;
+  padding: 16px 20px;
+  margin-bottom: 26px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.required-tag {
+  color: #c40000;
+  font-weight: 700;
+  margin-left: 4px;
+}
+
+/* セクション見出しの余白調整 */
+.section-title {
+  margin-bottom: 22px;
+}
+
+/* ===============================
+   修正：家庭用ヒーロー文字色変更
+   =============================== */
+.hero-house h1,
+.hero-house p {
+  color: #111 !important;
+  text-shadow: none !important;
+}
+/* ===============================
+   修正：業務用ヒーローセクション背景画像
+   =============================== */
+.hero {
+  background-image: url('images/air_conditioning_bg.png');
+}
+
+/* ===============================
+   業務用ヒーロー内ボタン整列
+   =============================== */
+.hero .hero-btns {
+  margin-top: 20px;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
 }

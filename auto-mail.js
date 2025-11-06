@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const data = Object.fromEntries(formData.entries());
 
         // <<<<<< ここをあなたのFormspree IDに置き換え >>>>>>
-        const formspreeEndpoint = "https://formspree.io/f/mzzklkjp";
+        const formspreeEndpoint = "https://formspree.io/f/xdkpdedo";
 
         try {
             const response = await fetch(formspreeEndpoint, {
