@@ -3,146 +3,156 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>家庭用エアコンクリーニング予約 | SunsCreate Air Solution</title>
+  <title>家庭用エアコンクリーニング予約 | SunsCreate</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <div class="container header-wrap">
-    <h1 class="logo">SunsCreate Air Solution</h1>
+  <div class="nav-container">
+    <div class="site-title">SunsCreate Air Solution</div>
     <nav>
       <ul>
-        <li><a href="index.html">業務用トップへ戻る</a></li>
-        <li><a href="#price">料金表</a></li>
-        <li><a href="#area">対応エリア</a></li>
+        <li><a href="index.html">業務用トップ</a></li>
         <li><a href="#form">予約フォーム</a></li>
+        <li><a href="#" id="open-area">📍 対応エリアを見る</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-<!-- ✅ 背景画像あり -->
-<section class="home-cleaning-hero">
-  <div class="hero-inner">
+<!-- ===================== -->
+<!-- Hero Section -->
+<!-- ===================== -->
+<div class="hero hero-home">
+  <div>
     <h1>家庭用エアコンクリーニング予約</h1>
     <p>一般家庭向けエアコン分解洗浄サービスです。<br>必要項目をご入力のうえ送信してください。</p>
   </div>
+</div>
+
+<!-- ===================== -->
+<!-- Price Guide -->
+<!-- ===================== -->
+<section class="section-white price-guide">
+  <h2>料金について</h2>
+  <div class="price-list">
+    <p>壁掛けエアコン（通常タイプ）<span>14,000円 / 台</span></p>
+    <p>天井埋め込み型・天吊型<span>27,000円 / 台</span></p>
+    <p>お掃除機能付きエアコン<span>＋6,000円 / 台</span></p>
+    <p>室外機洗浄<span>5,000円 / 台</span></p>
+  </div>
 </section>
 
-<!-- ✅ 料金表 -->
-<section id="price" class="section">
-  <div class="container">
-    <h2>料金表（税込）</h2>
-    <div class="price-box">
-      <p>壁掛けエアコン：14,000円／1台</p>
-      <p>天井埋め込み型（天吊型含む）：27,000円／1台</p>
-      <p>お掃除機能付き：+6,000円／1台</p>
-      <p>室外機洗浄：5,000円／1台</p>
-      <p class="note">※ 駐車場が無い場合はコインP実費をご負担ください。</p>
+<!-- ===================== -->
+<!-- Form -->
+<!-- ===================== -->
+<section id="form" class="section-light">
+  <h2>エアコンクリーニング予約フォーム</h2>
+
+  <form action="https://formspree.io/f/xdkpdedo" method="POST" id="cleaningForm">
+
+    <label>お名前 <span class="required-tag">※</span></label>
+    <input type="text" name="name" required>
+
+    <label>メールアドレス <span class="required-tag">※</span></label>
+    <input type="email" name="email" required>
+
+    <label>電話番号 <span class="required-tag">※</span></label>
+    <input type="text" name="tel" required>
+
+    <label>ご住所 <span class="required-tag">※</span></label>
+    <input type="text" name="address" required>
+
+    <label>駐車場の有無 <span class="required-tag">※</span></label>
+    <select name="parking" required>
+      <option value="">選択してください</option>
+      <option value="あり（敷地内）">あり（敷地内）</option>
+      <option value="あり（近隣）">あり（近隣）</option>
+      <option value="なし">なし</option>
+    </select>
+
+    <h3 class="form-block-title">エアコンの種類と台数</h3>
+
+    <div class="unit-row">
+      <label>壁掛けエアコン</label>
+      <select name="wall" class="unit" data-price="14000">
+        <option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option>
+      </select>
     </div>
-  </div>
-</section>
 
-<!-- ✅ 対応エリア -->
-<section id="area" class="section gray">
-  <div class="container">
-    <h2>対応エリア</h2>
-    <p>東京都・神奈川県（詳細対応エリアあり）</p>
-  </div>
-</section>
+    <div class="unit-row">
+      <label>天井埋め込み型・天吊型</label>
+      <select name="ceiling" class="unit" data-price="27000">
+        <option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option>
+      </select>
+    </div>
 
-<!-- ✅ 予約フォーム -->
-<section id="form" class="section">
-  <div class="container">
-    <h2>エアコンクリーニング予約フォーム</h2>
+    <div class="unit-row">
+      <label>お掃除機能付き</label>
+      <select name="cleaner" class="unit" data-price="6000">
+        <option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option>
+      </select>
+    </div>
 
-    <form action="https://formspree.io/f/YOUR_ID_HERE" method="POST" id="cleaning-form">
+    <div class="unit-row">
+      <label>室外機洗浄</label>
+      <select name="outdoor" class="unit" data-price="5000">
+        <option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option>
+      </select>
+    </div>
 
-      <label>お名前（必須）<br>
-        <input type="text" name="name" required>
-      </label>
+    <div class="total-box" id="totalPrice">合計：0円</div>
 
-      <label>メールアドレス（必須）<br>
-        <input type="email" name="email" required>
-      </label>
+    <h3 class="form-block-title">ご希望日（すべて別日）</h3>
 
-      <label>電話番号（任意）<br>
-        <input type="text" name="phone">
-      </label>
+    <label>第一希望日 <span class="required-tag">※</span></label>
+    <input type="date" name="date1" required>
+    <select name="time1" required>
+      <option value="">時間帯を選択</option>
+      <option value="午前">午前</option>
+      <option value="午後">午後</option>
+      <option value="どちらでもOK">どちらでもOK</option>
+    </select>
 
-      <!-- ✅ 種類ごとの入力欄 -->
-      <h3>エアコンの種類と台数</h3>
+    <label>第二希望日 <span class="required-tag">※</span></label>
+    <input type="date" name="date2" required>
+    <select name="time2" required>
+      <option value="">時間帯を選択</option>
+      <option value="午前">午前</option>
+      <option value="午後">午後</option>
+      <option value="どちらでもOK">どちらでもOK</option>
+    </select>
 
-      <label>壁掛けエアコン（14,000円/台）<br>
-        <input type="number" name="wall" class="calc-input" data-type="wall" min="0" value="0">
-      </label>
+    <label>第三希望日（任意）</label>
+    <input type="date" name="date3">
+    <select name="time3">
+      <option value="">時間帯を選択</option>
+      <option value="午前">午前</option>
+      <option value="午後">午後</option>
+      <option value="どちらでもOK">どちらでもOK</option>
+    </select>
 
-      <label>天井埋込型（27,000円/台）<br>
-        <input type="number" name="ceiling" class="calc-input" data-type="ceiling" min="0" value="0">
-      </label>
+    <div id="dateError" class="error-msg"></div>
 
-      <label>お掃除機能（+6,000円/台）<br>
-        <input type="number" name="clean" class="calc-input" data-type="clean" min="0" value="0">
-      </label>
+    <label>備考欄</label>
+    <textarea name="note" placeholder="例：高所作業あり / ペット在宅など"></textarea>
 
-      <label>室外機洗浄（5,000円/台）<br>
-        <input type="number" name="outdoor" class="calc-input" data-type="outdoor" min="0" value="0">
-      </label>
+    <input type="hidden" name="_subject" value="【家庭用】エアコンクリーニング予約">
+    <input type="hidden" name="_to" value="sunscreate@scky.fun">
 
-      <!-- ✅ リアルタイム金額表示 -->
-      <div class="total-price-box">
-        合計金額：<span id="total-price">0</span> 円（税込）
-      </div>
-
-      <!-- ✅ hidden input → 自動返信メールに金額送信 -->
-      <input type="hidden" name="total_price" id="hidden-total" value="0">
-
-      <h3>ご希望日</h3>
-
-      <label>第1希望日（必須）
-        <input type="date" name="date1" required>
-        <select name="time1" required>
-          <option value="午前">午前</option>
-          <option value="午後">午後</option>
-        </select>
-      </label>
-
-      <label>第2希望日（必須）
-        <input type="date" name="date2" required>
-        <select name="time2" required>
-          <option value="午前">午前</option>
-          <option value="午後">午後</option>
-        </select>
-      </label>
-
-      <label>第3希望日（任意）
-        <input type="date" name="date3">
-        <select name="time3">
-          <option value="">選択なし</option>
-          <option value="午前">午前</option>
-          <option value="午後">午後</option>
-        </select>
-      </label>
-
-      <label>備考欄（ご要望など）
-        <textarea name="message" rows="4" placeholder="例：駐車場あり / 午前中希望 など"></textarea>
-      </label>
-
-      <button type="submit" class="btn primary">送信する</button>
-    </form>
-
-  </div>
+    <button type="submit" class="btn">送信する</button>
+  </form>
 </section>
 
 <footer>
-  <div class="container">
-    <p>© 2025 SunsCreate Air Solution</p>
-  </div>
+  <p>© 2025 SunsCreate Air Solution</p>
 </footer>
 
-<!-- ✅ 計算スクリプト -->
+<!-- Scripts -->
 <script src="price-calc.js"></script>
+<script src="form-validate.js"></script>
+<script src="modal.js"></script>
 
 </body>
 </html>
