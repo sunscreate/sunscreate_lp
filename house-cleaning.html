@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>家庭用エアコン洗浄予約 | SunsCreate Air Solution</title>
+  <title>家庭用エアコンクリーニング予約 | SunsCreate Air Solution</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <div class="nav-container">
-    <div class="site-title">SunsCreate Air Solution</div>
+  <div class="container header-wrap">
+    <h1 class="logo">SunsCreate Air Solution</h1>
     <nav>
       <ul>
         <li><a href="index.html">業務用トップへ戻る</a></li>
@@ -22,215 +22,127 @@
   </div>
 </header>
 
-<!-- Hero -->
-<div class="hero-house" style="background-image: url('images/house-ac.jpg');">
-  <div>
+<!-- ✅ 背景画像あり -->
+<section class="home-cleaning-hero">
+  <div class="hero-inner">
     <h1>家庭用エアコンクリーニング予約</h1>
     <p>一般家庭向けエアコン分解洗浄サービスです。<br>必要項目をご入力のうえ送信してください。</p>
   </div>
-</div>
+</section>
 
-<!-- Price Section -->
-<section id="price" class="section-white">
-  <h2>料金表（税込）</h2>
-
-  <div class="price-box">
-    <ul>
-      <li>壁掛けエアコン：<span>14,000円／台</span></li>
-      <li>天井埋め込み型（天吊型含む）：<span>27,000円／台</span></li>
-      <li>お掃除機能付き：<span>＋6,000円／台</span></li>
-      <li>室外機洗浄：<span>5,000円／台</span></li>
-    </ul>
-    <p style="margin-top:8px; font-size:0.9rem;">※ 駐車場が無い場合はコインP実費のご負担をお願い致します</p>
+<!-- ✅ 料金表 -->
+<section id="price" class="section">
+  <div class="container">
+    <h2>料金表（税込）</h2>
+    <div class="price-box">
+      <p>壁掛けエアコン：14,000円／1台</p>
+      <p>天井埋め込み型（天吊型含む）：27,000円／1台</p>
+      <p>お掃除機能付き：+6,000円／1台</p>
+      <p>室外機洗浄：5,000円／1台</p>
+      <p class="note">※ 駐車場が無い場合はコインP実費をご負担ください。</p>
+    </div>
   </div>
 </section>
 
-<!-- Reservation Form -->
-<section id="form" class="section-light">
-  <h2>エアコンクリーニング予約フォーム</h2>
-
-  <div class="reservation-notice">
-    <b>⚠️ 必ずご確認ください</b><br>
-    ・第1希望 / 第2希望は必須入力です<br>
-    ・第3希望は任意ですが、日程調整がスムーズになります<br>
-    ・希望日は全て <span class="nowrap">別の日付</span> をご選択ください
+<!-- ✅ 対応エリア -->
+<section id="area" class="section gray">
+  <div class="container">
+    <h2>対応エリア</h2>
+    <p>東京都・神奈川県（詳細対応エリアあり）</p>
   </div>
+</section>
 
-  <form action="https://formspree.io/f/xdkpdedo" method="POST" id="cleaningForm">
+<!-- ✅ 予約フォーム -->
+<section id="form" class="section">
+  <div class="container">
+    <h2>エアコンクリーニング予約フォーム</h2>
 
-    <label>お名前 <span class="required-tag">※</span></label>
-    <input type="text" name="name" required>
+    <form action="https://formspree.io/f/YOUR_ID_HERE" method="POST" id="cleaning-form">
 
-    <label>ご住所 <span class="required-tag">※</span></label>
-    <input type="text" name="address" required>
+      <label>お名前（必須）<br>
+        <input type="text" name="name" required>
+      </label>
 
-    <label>電話番号 <span class="required-tag">※</span></label>
-    <input type="text" name="tel" required>
+      <label>メールアドレス（必須）<br>
+        <input type="email" name="email" required>
+      </label>
 
-    <label>メールアドレス <span class="required-tag">※</span></label>
-    <input type="email" name="email" required>
+      <label>電話番号（任意）<br>
+        <input type="text" name="phone">
+      </label>
 
+      <!-- ✅ 種類ごとの入力欄 -->
+      <h3>エアコンの種類と台数</h3>
 
-    <!-- エアコン台数 -->
-    <h3 style="margin-top:18px;">エアコンの種類と台数</h3>
+      <label>壁掛けエアコン（14,000円/台）<br>
+        <input type="number" name="wall" class="calc-input" data-type="wall" min="0" value="0">
+      </label>
 
-    <div class="field-row">
-      <div class="field-2">
-        <label>壁掛けエアコン</label>
-        <select name="wall" required>
-          <option value="0">0台</option>
-          <option value="1">1台</option>
-          <option value="2">2台</option>
-          <option value="3">3台</option>
-          <option value="4">4台</option>
-          <option value="5">5台</option>
-        </select>
+      <label>天井埋込型（27,000円/台）<br>
+        <input type="number" name="ceiling" class="calc-input" data-type="ceiling" min="0" value="0">
+      </label>
+
+      <label>お掃除機能（+6,000円/台）<br>
+        <input type="number" name="clean" class="calc-input" data-type="clean" min="0" value="0">
+      </label>
+
+      <label>室外機洗浄（5,000円/台）<br>
+        <input type="number" name="outdoor" class="calc-input" data-type="outdoor" min="0" value="0">
+      </label>
+
+      <!-- ✅ リアルタイム金額表示 -->
+      <div class="total-price-box">
+        合計金額：<span id="total-price">0</span> 円（税込）
       </div>
 
-      <div class="field-2">
-        <label>埋め込み型（天吊型含む）</label>
-        <select name="ceiling" required>
-          <option value="0">0台</option>
-          <option value="1">1台</option>
-          <option value="2">2台</option>
-          <option value="3">3台</option>
-          <option value="4">4台</option>
-          <option value="5">5台</option>
-        </select>
-      </div>
-    </div>
+      <!-- ✅ hidden input → 自動返信メールに金額送信 -->
+      <input type="hidden" name="total_price" id="hidden-total" value="0">
 
-    <div class="field-row">
-      <div class="field-2">
-        <label>お掃除機能付き台数</label>
-        <select name="cleaner">
-          <option value="0">0台</option>
-          <option value="1">1台</option>
-          <option value="2">2台</option>
-          <option value="3">3台</option>
-          <option value="4">4台</option>
-          <option value="5">5台</option>
-        </select>
-      </div>
+      <h3>ご希望日</h3>
 
-      <div class="field-2">
-        <label>室外機 洗浄台数</label>
-        <select name="outdoor">
-          <option value="0">0台</option>
-          <option value="1">1台</option>
-          <option value="2">2台</option>
-          <option value="3">3台</option>
-          <option value="4">4台</option>
-          <option value="5">5台</option>
-        </select>
-      </div>
-    </div>
-
-
-    <!-- 駐車場 -->
-    <label>駐車場の有無 <span class="required-tag">※</span></label>
-    <select name="parking" required>
-      <option value="">選択してください</option>
-      <option value="あり">あり</option>
-      <option value="なし">なし</option>
-    </select>
-
-    <!-- 高さ -->
-    <label>エアコンの設置高さ</label>
-    <select name="height">
-      <option value="">選択してください</option>
-      <option value="2.5m以下">2.5m以下</option>
-      <option value="3m以上">3m以上</option>
-    </select>
-
-
-    <!-- 希望日（3つ & 午前/午後） -->
-    <h3 style="margin-top:22px;">ご希望日</h3>
-
-    <div class="field-row">
-      <div class="field-3">
-        <label>第1希望日 <span class="required-tag">※</span></label>
+      <label>第1希望日（必須）
         <input type="date" name="date1" required>
-      </div>
-      <div class="field-3">
-        <label>時間帯</label>
         <select name="time1" required>
           <option value="午前">午前</option>
           <option value="午後">午後</option>
         </select>
-      </div>
-    </div>
+      </label>
 
-    <div class="field-row">
-      <div class="field-3">
-        <label>第2希望日 <span class="required-tag">※</span></label>
+      <label>第2希望日（必須）
         <input type="date" name="date2" required>
-      </div>
-      <div class="field-3">
-        <label>時間帯</label>
         <select name="time2" required>
           <option value="午前">午前</option>
           <option value="午後">午後</option>
         </select>
-      </div>
-    </div>
+      </label>
 
-    <div class="field-row">
-      <div class="field-3">
-        <label>第3希望日（任意）</label>
+      <label>第3希望日（任意）
         <input type="date" name="date3">
-      </div>
-      <div class="field-3">
-        <label>時間帯</label>
         <select name="time3">
-          <option value="">---</option>
+          <option value="">選択なし</option>
           <option value="午前">午前</option>
           <option value="午後">午後</option>
         </select>
-      </div>
-    </div>
+      </label>
 
-    <!-- バリデーション表示 -->
-    <div id="dateError" class="date-error">⚠ 同じ日付は選べません。別の日付を選択してください。</div>
+      <label>備考欄（ご要望など）
+        <textarea name="message" rows="4" placeholder="例：駐車場あり / 午前中希望 など"></textarea>
+      </label>
 
+      <button type="submit" class="btn primary">送信する</button>
+    </form>
 
-    <!-- 支払い方法 -->
-    <label>お支払い方法 <span class="required-tag">※</span></label>
-    <select name="payment" required>
-      <option value="">選択してください</option>
-      <option value="現金">現金</option>
-      <option value="クレジットカード">クレジットカード</option>
-      <option value="QR決済">QR決済</option>
-      <option value="後日振込">後日振込</option>
-    </select>
-
-
-    <!-- 備考欄 -->
-    <label>備考 / その他ご要望</label>
-    <textarea name="note" placeholder="例：子どもがいるので音の少ない作業を希望します など"></textarea>
-
-
-    <input type="hidden" name="_subject" value="【家庭用】エアコンクリーニング予約">
-    <input type="hidden" name="_to" value="sunscreate@scky.fun">
-
-    <button type="submit" class="btn" id="submitBtn">送信する</button>
-  </form>
-</section>
-
-<!-- 対応エリア -->
-<section id="area" class="section-white">
-  <h2>対応エリア</h2>
-
-  <div class="area-box">
-    <h3>東京都 / 神奈川県 / 埼玉県 / 千葉県</h3>
-    <p style="font-size:0.9rem;">※ 市区町村の詳細リストは業務用トップページに記載しています</p>
   </div>
 </section>
 
 <footer>
-  <p>© 2025 SunsCreate Air Solution</p>
+  <div class="container">
+    <p>© 2025 SunsCreate Air Solution</p>
+  </div>
 </footer>
 
-<script src="script.js"></script>
+<!-- ✅ 計算スクリプト -->
+<script src="price-calc.js"></script>
+
 </body>
 </html>
