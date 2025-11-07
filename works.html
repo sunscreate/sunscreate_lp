@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>施工事例ギャラリー | SunsCreate</title>
+  <meta name="description" content="SunsCreateが手掛けたエアコン・空調設備の施工事例をご紹介。業務用・家庭用の設置・洗浄・修理まで幅広く対応しています。">
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <style>
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    .works-hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: #f7faff;
+    }
+    .works-hero h2 {
+      font-size: 2rem;
+      color: #003366;
+      margin-bottom: 10px;
+    }
+    .works-hero p {
+      font-size: 1rem;
+      color: #444;
+      line-height: 1.7;
+    }
+
+    .works-gallery {
+      padding: 40px 0;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .swiper {
+      width: 100%;
+      padding-bottom: 50px;
+    }
+
+    .work-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .work-images {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+
+    .work-images img {
+      width: 45%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .work-info {
+      text-align: center;
+    }
+
+    .work-info h3 {
+      font-size: 1.1rem;
+      margin: 8px 0;
+      color: #003366;
+    }
+
+    .work-info p {
+      font-size: 0.95rem;
+      color: #555;
+      margin: 0 0 8px;
+    }
+
+    .work-info span {
+      display: inline-block;
+      color: #0077cc;
+      font-size: 0.9rem;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+      color: #003366;
+    }
+
+    .cta {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .cta h2 {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+    }
+    .cta .btn {
+      background: #ffcc00;
+      color: #003366;
+      padding: 12px 30px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .cta .btn:hover {
+      background: #ffdb4d;
+    }
+
+    footer {
+      background: #002244;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .work-images {
+        flex-direction: column;
+      }
+      .work-images img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>SunsCreate</h1>
+  </header>
+
+  <section class="works-hero">
+    <h2>施工事例ギャラリー</h2>
+    <p>SunsCreateが手掛けたエアコン・空調設備の施工事例をご紹介します。<br>
+      業務用・家庭用問わず、設置・洗浄・修理など幅広く対応しています。</p>
+  </section>
+
+  <section class="works-gallery">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+
+        <!-- 事例1 -->
+        <div class="swiper-slide">
+          <div class="work-card">
+            <div class="work-images">
+              <img src="images/work1-before.jpg" alt="施工前" class="before">
+              <img src="images/work1-after.jpg" alt="施工後" class="after">
+            </div>
+            <div class="work-info">
+              <h3>オフィス天カセ4台洗浄（川崎市）</h3>
+              <p>業務用天カセエアコン4台を分解洗浄。カビ汚れ除去で冷却効率を改善しました。</p>
+              <span>#業務用 #天カセ #洗浄 #神奈川</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 事例2 -->
+        <div class="swiper-slide">
+          <div class="work-card">
+            <div class="work-images">
+              <img src="images/work2-before.jpg" alt="施工前" class="before">
+              <img src="images/work2-after.jpg" alt="施工後" class="after">
+            </div>
+            <div class="work-info">
+              <h3>飲食店ダクト洗浄（渋谷区）</h3>
+              <p>油汚れの詰まりを除去し、排気性能を大幅に改善しました。</p>
+              <span>#飲食店 #ダクト #洗浄 #東京</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 事例3 -->
+        <div class="swiper-slide">
+          <div class="work-card">
+            <div class="work-images">
+              <img src="images/work3-before.jpg" alt="施工前" class="before">
+              <img src="images/work3-after.jpg" alt="施工後" class="after">
+            </div>
+            <div class="work-info">
+              <h3>工場エアコン修理（千葉市）</h3>
+              <p>基板不良による動作停止を修理し、正常運転を確認。省エネ設定へ再調整。</p>
+              <span>#業務用 #修理 #千葉</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ナビゲーション -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>エアコン洗浄・施工のご相談はこちら</h2>
+    <a href="house-cleaning.html" class="btn">お問い合わせ・予約フォームへ</a>
+  </section>
+
+  <footer>
+    <p>© 2025 SunsCreate. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      slidesPerView: 1,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+</body>
+</html>
