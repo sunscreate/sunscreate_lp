@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SunsCreate｜家庭用エアコンクリーニングチラシ（両面）</title>
+<style>
+  @page { size: A6; margin: 0; }
+  body {
+    font-family: "Noto Sans JP", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #333;
+  }
+  .page {
+    width: 105mm;
+    height: 148mm;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 18mm;
+    box-sizing: border-box;
+  }
+  /* 表面デザイン */
+  .front {
+    background: linear-gradient(180deg, #f3faff 0%, #ffffff 100%);
+  }
+  .catch {
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    color: #0077cc;
+    margin-bottom: 6px;
+  }
+  .subcatch {
+    text-align: center;
+    font-size: 13px;
+    color: #444;
+    margin-bottom: 8px;
+  }
+  .photo-box {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+  }
+  .photo-box img {
+    width: 48%;
+    border-radius: 6px;
+    object-fit: cover;
+  }
+  .price {
+    background: #fff8e1;
+    border: 2px solid #ffd54f;
+    text-align: center;
+    padding: 6px;
+    font-size: 13px;
+    border-radius: 8px;
+    margin-top: 8px;
+  }
+  .price strong {
+    color: #d32f2f;
+    font-size: 18px;
+  }
+  .feature {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .profile {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 8px;
+  }
+  .profile img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .profile div {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  .qr {
+    text-align: center;
+    margin-top: 6px;
+  }
+  .qr img {
+    width: 90px;
+    height: 90px;
+  }
+  .qr p {
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  /* 裏面デザイン */
+  .back {
+  background: linear-gradient(180deg, #fffdf8 0%, #fff 100%);
+  padding-top: 25mm; /* ← ここを追加（前は10mm） */
+  }
+  .voice {
+    font-size: 12px;
+    background: #f9f9f9;
+    border-left: 3px solid #ffc107;
+    padding: 8px;
+    margin-bottom: 8px;
+  }
+  .coupon {
+    border: 2px dashed #ff7043;
+    background: #fff3e0;
+    text-align: center;
+    padding: 8px;
+    font-size: 13px;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+  .coupon span {
+    font-size: 20px;
+    color: #d32f2f;
+  }
+  .contact {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+    line-height: 1.5;
+  }
+  .contact a {
+    color: #0077cc;
+    text-decoration: none;
+  }
+  .footer {
+    text-align: center;
+    font-size: 10px;
+    color: #666;
+    margin-top: 8px;
+  }
+</style>
+</head>
+<body>
+
+<!-- 表面 -->
+<section class="page front">
+  <div>
+    <div class="catch">「冷房つけると、なんか臭う…」</div>
+    <div class="subcatch">それ、エアコン内部のカビかもしれません！</div>
+    <div class="photo-box">
+      <img src="images/IMG_0173.JPG" alt="Before（洗浄前）">
+      <img src="images/IMG_0174.JPG" alt="After（洗浄後）">
+    </div>
+    <div class="price">
+      壁掛けタイプ <strong>14,000円〜</strong><br>
+      お掃除機能付き +6,000円<br>
+      <small>※追加料金なし・出張費無料（宮前区限定）</small>
+    </div>
+    <div class="feature">
+      ✅ 高圧洗浄で奥のカビまでスッキリ除去！<br>
+      ✅ お子様・ペットにも安心のエコ洗剤使用<br>
+      ✅ 女性宅・一人暮らしでも安心対応
+    </div>
+    <div class="profile">
+      <img src="images/IMG_2536.JPG" alt="代表 山田和矢">
+      <div>
+        SunsCreate代表<br>
+        <strong>山田 和矢</strong><br>
+        「地域密着・誠実対応をお約束します」
+      </div>
+    </div>
+  </div>
+  <div class="qr">
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://sunscreate.work/house-cleaning.html" alt="QRコード">
+    <p>📱 スマホで簡単予約はこちら</p>
+  </div>
+</section>
+
+<!-- 裏面 -->
+<section class="page back">
+  <div>
+    <div class="voice">
+      🗣️ <strong>お客様の声</strong><br><br>
+      「想像以上に汚れていてびっくり！風が気持ちよくなりました」（宮前区・主婦）<br><br>
+      「小さい子どもがいるので、安心して頼めました」（高津区・30代女性）<br><br>
+      「対応も丁寧で説明もわかりやすかったです」（宮崎台・40代男性）
+    </div>
+
+    <div class="coupon">
+      🎁 このチラシを見た方限定<br>
+      <span>1,000円OFFクーポン</span><br>
+      （ご予約時に「QR1000」と入力）
+    </div>
+
+    <div class="contact">
+      ✉ ご予約・お問い合わせ<br>
+      <a href="mailto:sunscreate@scky.fun">sunscreate@scky.fun</a><br>
+      またはQRコードから24時間受付中！
+    </div>
+  </div>
+
+  <div class="footer">
+    SunsCreate（サンズクリエイト）<br>
+    川崎市宮前区｜家庭用・業務用エアコン洗浄
+  </div>
+</section>
+
+</body>
+</html>
